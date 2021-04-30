@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Waga.et: Know Market Price</title>
+  <title>WAGA.et: No More Guess</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
   <!-- Custom styles for this template -->
   <link href="css/business-casual.css" rel="stylesheet">
   <link href="css/overlay.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
 </head>
 
@@ -39,22 +40,114 @@
           </p>
   
           <div class="intro-button mx-auto">
-               <a class="btn btn-success mx-3" href="index.html">&nbsp;&nbsp;&nbsp;Subscribe&nbsp;&nbsp;&nbsp;</a> | <a class="btn btn-primary mx-3 my-2" href="login.html">Login</a>
+               <a class="btn btn-success mx-3" href="sms:1010?body=OK">&nbsp;&nbsp;&nbsp;Subscribe&nbsp;&nbsp;&nbsp;</a> | <a class="btn btn-primary mx-3 my-2" href="login.html">Login</a>
           </div>
           <div calss="bg-primary">
           <p class="mb-0 text-muted">Already Subscribed? Click LogIn<p>
-          <p class="text-muted">To Unsubscribe Send 'STOP' to [####]</p>
+          <p class="text-muted"><a id="smsUnsub" class="text-warning" href="sms:1010?body=STOP">To Unsubscribe</a> Send 'STOP' to [####]</p>
           <div>
         </div>
       </div>
     </div>
   </section>
   <div class="cta-inner text-center">
-        <a class="mx-3" onclick="on()" href="#">&nbsp;&nbsp;&nbsp;Terms and Conditions&nbsp;&nbsp;&nbsp;</a> | <a class=" mx-3 my-2" href="#">About Us</a>
+        <a class="mx-3" href="#" data-toggle="modal" data-target="#tc"><i class="fa fa-arrow-right" aria-hidden="true"></i> Terms and Conditions</a> | <a class=" mx-3 my-2" href="#">About Us</a>
   </div>
 
   <div id="overlay" onclick="off()">
     <div id="text-overlay">Terms and Conditions</div>
+  </div>
+
+  <!-- Button trigger modal 
+  <button type="link" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#tc">
+    Terms and Conditions
+  </button> 
+  -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="tc" tabindex="-1" role="dialog" aria-labelledby="TermsnConditions" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Terms and Conditions(T&C) - WAGA.et</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <p>
+          <h3><span class="section-heading-lower text-primary">WAGA.et</span></h3>
+          WAGA SERVICES - THE CURRENT (TODAY’S) COMMODITY PRICE AT DIFFERENT MARKET PLACES.
+          </p>
+
+          <p>
+          Please read these Terms and Conditions ("Terms", "Conditions") carefully before using the http://www.famnet.et or http://www.waga.et website and the daily price of goods Service (the "Service") operated by FAM NET Technology Solution (the “Service Provider”, “us", "we", or "our"). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+          By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms, then you should not access the Service.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">1. Service Description</span></h3>
+          “Waga Service” provides the current (Today’s) commodity price at different market places. The prices are whole sale price and retail prices of a specific commodity at the selected market. It also provides the average price of a   client’s chosen commodity in the city. Waga service will provide prices on three categories of commodities, such as commonly consumable food commodity, Clothing commodity and latest electronics commodity.  
+          You can only use the services once if you only agree with the Terms and conditions. By continuing using the service, you have agreed with the Terms and Conditions of "Waga service."
+          We disclaim all liability and responsibility arising from any reliance placed on information and materials on the website by any visitor to the Site, or by any person who may be informed of any of its content.
+          "Waga service" service will be given after successful subscription for the service on waga.et website.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">2. Subscription</span></h3>
+          The service is provided to mobile users who subscribe by clicking and passing through the “Subscribe” and “Confirmation” steps of the website. Up on completing this two steps, the mobile customer is regarded as a subscriber and will receive a confirmation SMS from our short code.
+          </p>
+          
+          <p>
+          <h3><span class="badge text-primary">3. Charging</span></h3>
+          As stated clearly on the landing page of the website, the first 3 days after subscription will be free of charge. Afterwards, 2 Birrs will be deducted from the subscriber’s mobile credit every day till the customer unsubscribed from the service.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">4. Subscriber Management</span></h3>
+          To unsubscribe from the service, a customer can send “STOP” to the dedicated service short code line or can click the “Unsubscribe” button inside the website. Afterwards, the user will no longer can access the contents of the website and won’t be charged onwards.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">5. Eligibility</span></h3>
+          This service is for ETHIO Telecom mobile customers who reside in Ethiopia and is above the age of 18.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">6. Service Provider’s Responsibility</span></h3>
+          The service provider must send confirmation and reminder SMS to the subscriber and properly execute received “STOP” messages or unsubscribe requests</p>
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">7. Website availability</span></h3>
+          We take all reasonable steps to ensure that the website is available 24 hours every day, 365 days per year. However, websites do sometimes encounter downtime due to technical and hosting infrastructure issues. Therefore, we will not be liable if this website is unavailable at any time. The website may be temporarily unavailable due to issues such as system failure, maintenance or repair or for reasons beyond our control.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">8. Links To Other Web Sites</span></h3>
+          waga.et website can be linked to other web and mobile platforms including app and websites advertisements. We do not review each 3rd party website/application and have no responsibility for such third party websites/applications or their content. We do not endorse the 3rd party websites/applications or make representations about them or any material contained in them.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">9. Changes</span></h3>
+          The SERVICE PROVIDER can make changes and amendments on any of the Terms and Conditions and implement it on the service as they see fit without any prior notice. Subscribers shall read the Terms and Conditions whenever they use the site and shall update themselves if there are amendments on the Terms and Conditions of the service. If you don't agree with the amendments, you shall stop using the service.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">10. Support</span></h3>
+          In accordance with this Terms and Conditions, The SERVICE PROVIDER is ready to give any support related to Service Content, Website Access or other aspects of the service. To contact customer support service, you can call 09######## or send an email to ethio.waga.service@gmail.com. The support team will give a solution as fast as possible.
+          </p>
+
+          <p>
+          <h3><span class="badge text-primary">11. Governing jurisdiction</span></h3>
+          This Legal Notice shall be governed by and construed in accordance with Ethiopian law. Any dispute(s) arising in connection with this Legal Notice are subject to the exclusive jurisdiction of Ethiopia.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer text-faded text-center py-3">
@@ -63,15 +156,6 @@
     </div>
   </footer>
   <!-- Bootstrap core JavaScript -->
-  <script>
-      function on() {
-        document.getElementById("overlay").style.display = "block";
-      }
-
-      function off() {
-        document.getElementById("overlay").style.display = "none";
-      }
-  </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
