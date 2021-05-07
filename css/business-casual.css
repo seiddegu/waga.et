@@ -254,3 +254,7 @@ p {
 .font-weight-light {
   font-weight: 100 !important;
 }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color:#f5a134;
+}
